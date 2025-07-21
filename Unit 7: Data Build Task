@@ -1,1 +1,34 @@
+Building a Relational Database System After Normalisation
+After normalising the student dataset to Third Normal Form (3NF), a relational database system was designed using multiple linked tables. This helped organise the data properly and demonstrate how primary and foreign keys can be used to connect related information.
+
+Tables Created
+- Students Table
+- Primary Key: StudentNumber
+- Contains student details such as name, date of birth, exam score, and support status
+- Courses Table
+- Primary Key: CourseID
+- Contains course names (e.g. Maths, Biology, Music)
+- ExamBoards Table
+- Primary Key: BoardID
+- Contains board names (e.g. AQA, EdExcel)
+- Teachers Table
+- Primary Key: TeacherID
+- Contains teacher names
+- Enrolments Table
+- Primary Key: Combination of StudentNumber, CourseID
+- Foreign Keys: Links to StudentNumber, CourseID, BoardID, TeacherID
+- Shows which student is studying which course with which teacher and exam board
+
+Referential Integrity Testing
+- Foreign key constraints were applied to ensure that links between tables were valid.
+- Test entries were added and checked to confirm that:
+- Students could only be linked to valid course, teacher, and exam board entries.
+- Invalid or unmatched references were blocked by the database.
+
+Summary of Results
+By completing this task:
+- The principles of relational design were applied in practice.
+- The use of primary keys ensured unique records.
+- The use of foreign keys enforced consistency between related tables.
+- Referential integrity was maintained, preventing errors or mismatches in the database.
 
