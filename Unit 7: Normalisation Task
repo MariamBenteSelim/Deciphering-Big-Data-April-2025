@@ -1,1 +1,15 @@
+Data Normalisation to Third Normal Form (3NF)
+A dataset containing student information was analysed and normalised in stages, improving its structure and clarity for use in databases. The task was completed by following the three key normalisation steps: 1NF, 2NF, and 3NF.
+
+First Normal Form (1NF)
+The original table was examined, and multi-valued cells (such as multiple courses, teachers, and exam boards listed in one cell) were identified. These were separated so that each piece of data appeared in its own row. This ensured that each field contained only one value, and redundancy was reduced.
+
+Second Normal Form (2NF)
+The dataset was then divided into multiple related tables. Partial dependencies were removed by separating student information from course, teacher, and exam board data. A linking table was created to connect students with their respective courses, teachers, and exam boards.
+
+Third Normal Form (3NF)
+Transitive dependencies were eliminated to ensure that all attributes depended directly on the primary key. As a result, the final tables contained only relevant information and were free from unnecessary data duplication.
+
+Reflection
+During this task, important lessons were learned about how messy data can be simplified and cleaned through logical structure. A better understanding of how information should be stored in relational databases was gained, making future data processing easier and more efficient. The experience also highlighted how normalisation helps prevent errors and improves consistency across datasets.
 
