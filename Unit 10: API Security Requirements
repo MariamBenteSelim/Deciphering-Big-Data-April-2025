@@ -1,0 +1,46 @@
+Security Requirements Specification
+API Chosen: OpenWeatherMap API
+Use Case: Python program accessing weather data and saving it as JSON/XML/SQL for analysis or sharing
+
+1. Authentication & API Key Management
+- Requirement: An API key must be used to access the OpenWeatherMap API.
+- Security Risk: If the API key is exposed publicly (e.g., in GitHub), unauthorized access or data overuse may occur.
+- Mitigation:
+- Store API keys in environment variables or external config files (not in the code directly)
+- Use .gitignore to prevent accidental uploads of keys
+- Rotate keys regularly and monitor usage
+
+2. HTTPS Usage
+- Requirement: All data exchanges must use HTTPS instead of HTTP.
+- Security Risk: Without HTTPS, data can be intercepted during transmission.
+- Mitigation:
+- Always confirm the API URL starts with https://
+- Use libraries like requests which default to secure connections
+
+3. Data Validation & File Storage
+- Requirement: Retrieved data (JSON/XML) must be validated before saving or inserting into SQL
+- Security Risk: Invalid or unexpected data may corrupt files or databases
+- Mitigation:
+- Use Python checks (e.g., try/except, schema validation tools like jsonschema)
+- Ensure XML/JSON structures match expected formats
+- Sanitize inputs before writing to SQL to prevent SQL injection
+
+4. SQL Interaction Safety
+- Requirement: Use parameterized queries when saving to SQL
+- Security Risk: Improper query formatting can allow SQL injection attacks
+- Mitigation:
+- Use Python libraries like sqlite3 or SQLAlchemy which support safe queries
+- Avoid directly inserting user inputs into SQL strings
+
+5. Rate Limiting & Usage Monitoring
+- Requirement: Respect the API’s rate limits to avoid service disruption
+- Security Risk: Abuse or unintended high-frequency access can lead to bans or broken systems
+- Mitigation:
+- Check the OpenWeatherMap API documentation for request limits
+- Add delay (time.sleep()) or retry logic to scripts if needed
+- Monitor logs to detect unusual usage patterns
+
+Tools and Techniques Used
+- Python Modules: requests, os, json, xml.etree.ElementTree, sqlite3
+- File Formats Managed: JSON and XML for storage; SQL for structured data insertion
+- Best Practices Followed: API key protection, validation before saving, safe SQL interaction
