@@ -1,1 +1,40 @@
+Introduction
+The purpose of this evaluation is to reflect on progress from the initial project proposal in Unit 6 to the final submission in Unit 11, considering tutor feedback and self-assessment. 
+The focus is on improvements achieved, gaps that remained, and lessons learned.
 
+Strengths of Unit 6 Proposal
+Well-written and structured, within the required word limit.
+Demonstrated clear understanding of database principles and application.
+Included academic references in Harvard style.
+Project objectives were articulated concisely.
+
+Areas of Weakness in Unit 6
+Limited critical analysis: Technology decisions (PostgreSQL, Supabase) were presented without comparison or justification.
+Unclear use of CSV files in the context of relational database forms.
+Limited references (around 12), reducing support for theoretical discussions.
+
+Improvements in Unit 11
+Increased references to approximately 20, improving academic support.
+Added implementation details such as PostgreSQL integration with Supabase and visualisation using Power BI.
+Maintained Harvard referencing style throughout.
+
+Remaining Gaps in Unit 11
+Criticality still limited: No comprehensive comparison between PostgreSQL and alternatives like MySQL, Oracle, or MS SQL.
+Minimal discussion of NoSQL databases despite relevance.
+
+Structural issues: Repetition of technology details in both executive summary and main report.
+
+Word count: Final report reached 1,826 words, below the required 2,000.
+
+Content gaps: Limited explanation of the data management pipeline (ETL process).
+GDPR compliance not addressed, despite data privacy importance.
+
+Lessons Learned
+Greater emphasis is required on critical justification of technology choices, supported by academic evidence.
+Avoidance of redundancy in content would create space for in-depth analysis.
+Adequate planning is essential to meet word count requirements without sacrificing quality.
+Compliance with regulations such as GDPR and detailed discussion of data handling processes must be included to demonstrate best practice.
+
+Conclusion
+Progress was evident between Unit 6 and Unit 11, particularly in technical detail and referencing. However, critical depth, structural efficiency, and regulatory considerations remained underdeveloped. 
+Future work will prioritise structured argumentation, theoretical comparisons, and comprehensive coverage of compliance requirements.
