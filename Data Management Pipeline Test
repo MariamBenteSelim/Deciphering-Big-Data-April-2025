@@ -1,0 +1,114 @@
+
+Highest grade: 9.55 / 10.00.
+
+Match a Python concept/library with its purpose.
+
+Enables you to easily format Python date objects into strings and create objects out for strings.
+
+Answer 1 Question 1
+Datetime strptime and strftime methods
+ 
+Test membership. Usually used with strings or lists.
+
+Answer 2 Question 1
+In and not in statements
+ 
+Returns a list of the dictionary's values. Great for using to test membership.
+
+Answer 3 Question 1
+Dictionary values
+ 
+Flags used to format numbers into easily readable objects.
+
+Answer 4 Question 1
+String formatting (.4f,.2%, ,)
+ 
+Enable quick and easy list assembly using an iterator, a function, and/or an if statement to further clean and process your data.
+
+Answer 5 Question 1
+List generators
+ 
+A basic outline of some best practices to follow as a new Python developer.
+
+Answer 6 Question 1
+Python best practices
+ 
+Lets you store your data in a CSV using the csv writer class.
+
+Answer 7 Question 1
+CSV writer object
+ 
+A philosophy for how to write and think like a Python programmer.
+
+Answer 8 Question 1
+Zen of Python (import this)
+ 
+Feedback
+Your answer is correct.
+The correct answer is: Enables you to easily format Python date objects into strings and create objects out for strings. → Datetime strptime and strftime methods, Test membership. Usually used with strings or lists. → In and not in statements, Returns a list of the dictionary's values. Great for using to test membership. → Dictionary values, Flags used to format numbers into easily readable objects. → String formatting (.4f,.2%, ,), Enable quick and easy list assembly using an iterator, a function, and/or an if statement to further clean and process your data. → List generators, A basic outline of some best practices to follow as a new Python developer. → Python best practices, Lets you store your data in a CSV using the csv writer class. → CSV writer object, A philosophy for how to write and think like a Python programmer. → Zen of Python (import this)
+Question 2
+Partially correct
+Mark 0.91 out of 1.00
+Flag question
+Question text
+Match the Python practice with a description.
+
+All functions, variables and files should have clear names that make their contents of intended use obvious.
+
+Answer 1 Question 2
+Clear naming
+ 
+Variables and functions should follow proper Python syntax (generally lowercase with underscores between words, or CamelCase for class names) and the code should follow PEP=8 standards.
+
+Answer 2 Question 2
+Proper syntax
+ 
+All code should be under version control, so you or your colleagues can create new branches ,try out new features, and still have a working master version of the repository.
+
+Answer 3 Question 2
+Version control
+ 
+When applicable and possible, test your code by using test example data and writing tests for your individual functions.
+
+Answer 4 Question 2
+Test your code
+ 
+Organise your repository into a logical and hierarchical structure, so code used together is organised together and follows normal logical patterns.
+
+Answer 5 Question 2
+Repository organization.
+ 
+Use the syntactic sugar of Python to write fast and efficient code, but err on the side of clarity if the two are opposed.
+
+Answer 6 Question 2
+Fast but clear
+ 
+Use proper exceptions in your try blocks, be specific in your documentation, and use specific variable names.
+
+Answer 7 Question 2
+Be specific
+ 
+Include comments, function descriptions, and script clarifications throughout the code, as well as README.md files or any other necessary description in the repository structure.
+
+Answer 8 Question 2
+Be specific
+ 
+Only import what you need and use, and follow PEP-8 guidelines for you import structure.
+
+Answer 9 Question 2
+Imports
+ 
+When you need to do something someone else has already coded in Python, don't reinvent the wheel. Use good libraries and contribute to them to help the open source community.
+
+Answer 10 Question 2
+Use libraries
+ 
+Create abstract helper functions to make your code clear and reusable (e.g. export_to_csv to take a list and write a CSV export).
+
+Answer 11 Question 2
+Helper functions.
+ 
+Feedback
+Your answer is partially correct.
+You have correctly selected 10.
+The correct answer is: All functions, variables and files should have clear names that make their contents of intended use obvious. → Clear naming, Variables and functions should follow proper Python syntax (generally lowercase with underscores between words, or CamelCase for class names) and the code should follow PEP=8 standards. → Proper syntax, All code should be under version control, so you or your colleagues can create new branches ,try out new features, and still have a working master version of the repository. → Version control, When applicable and possible, test your code by using test example data and writing tests for your individual functions. → Test your code, Organise your repository into a logical and hierarchical structure, so code used together is organised together and follows normal logical patterns. → Repository organization., Use the syntactic sugar of Python to write fast and efficient code, but err on the side of clarity if the two are opposed. → Fast but clear, Use proper exceptions in your try blocks, be specific in your documentation, and use specific variable names. → Be specific, Include comments, function descriptions, and script clarifications throughout the code, as well as README.md files or any other necessary description in the repository structure. → Documentation, Only import what you need and use, and follow PEP-8 guidelines for you import structure. → Imports, When you need to do something someone else has already coded in Python, don't reinvent the wheel. Use good libraries and contribute to them to help the open source community. → Use libraries, Create abstract helper functions to make your code clear and reusable (e.g. export_to_csv to take a list and write a CSV export). → Helper functions.
