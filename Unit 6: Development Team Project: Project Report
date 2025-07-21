@@ -1,0 +1,7 @@
+Assignment Brief for Project Report - Database Design
+
+Feedback
+The report was well written and meets all the requirements. It is within word limits, well structured, and includes about a dozen references listed in the Harvard style and cited in the text. There is very good demonstration of knowledge and application throughout, described concisely and clearly.
+
+Where the report lacks is criticality, which require much more attention. Decisions are made on PostgresSQL, Supabase, for example, but no comparisons with options or reasoning are provided. The use of CSV format for files is unclear considering the use of forms in a relational database. This may have been limited by word count, but still adjustments should have been made accordingly. A good critical analysis would have also required more citations.
+
