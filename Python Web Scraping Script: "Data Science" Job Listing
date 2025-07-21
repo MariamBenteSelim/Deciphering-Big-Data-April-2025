@@ -1,0 +1,44 @@
+# These are your Python tools!
+import requests                    # Lets your code talk to websites
+from bs4 import BeautifulSoup     # Helps your code understand and pull info from websites
+import json                       # Saves info in an easy-to-read format
+import xml.etree.ElementTree as ET  # Saves info as XML (kind of like HTML)
+
+# Step 1: Visit a job website with “Data Scientist” search
+url = "https://www.indeed.com/jobs?q=Data+Scientist"
+headers = {"User-Agent": "Mozilla/5.0"}  # Pretend to be a browser
+response = requests.get(url, headers=headers)  # Get the page
+
+# Step 2: Understand the HTML (the website’s language)
+soup = BeautifulSoup(response.text, "html.parser")
+
+# Step 3: Collect job cards (each job post is like a card)
+job_cards = soup.find_all("div", class_="job_seen_beacon")
+
+# Step 4: Pick useful details and store them
+jobs = []
+for job in job_cards[:10]:  # Only grab 10 jobs to keep it simple
+    title = job.find("h2", class_="jobTitle")
+    company = job.find("span", class_="companyName")
+    location = job.find("div", class_="companyLocation")
+    
+    jobs.append({
+        "title": title.text.strip() if title else "N/A",
+        "company": company.text.strip() if company else "N/A",
+        "location": location.text.strip() if location else "N/A"
+    })
+
+# Step 5: Save as a JSON file
+with open("data_scientist_jobs.json", "w") as json_file:
+    json.dump(jobs, json_file, indent=2)
+
+# Step 6: Save as an XML file
+root = ET.Element("Jobs")
+for job in jobs:
+    job_elem = ET.SubElement(root, "Job")
+    for key, value in job.items():
+        child = ET.SubElement(job_elem, key)
+        child.text = value
+
+tree = ET.ElementTree(root)
+tree.write("data_scientist_jobs.xml", encoding="utf-8", xml_declaration=True)
