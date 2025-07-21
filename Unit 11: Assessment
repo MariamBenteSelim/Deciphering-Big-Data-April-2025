@@ -1,0 +1,5 @@
+Feedback: The report redresses all requirements, but with limited depth of details. The implementation is based on PostgreSQL hosted in cloud-based Supabase and using Power BI. This level of technology details is good, but there are two issues. First, these items are mentioned more than once - in the summary section then in the main report and unifying these would be a better option considering the report size. Second, the theoretical comparisons with other SQL databases is not explained, while discussing NoSQL is very limited.
+
+Although including 20 references cited within the text, the critical discussions are limited and redressing the requirements lacks depth (see above). Data management pipeline has limited details, and adherence to GDPR is not explained.
+
+ The word count is 1826 which is less than the required 2000. Increasing that, along with avoiding the redundant redressing of topic as mentioned above, would have assisted with a better outcome including a better report structure and content.
